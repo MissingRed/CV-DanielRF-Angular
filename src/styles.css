@@ -1,1 +1,57 @@
 /* You can add global styles to this file, and also import other style files */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+html {
+  background: #252627;
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  /* Tamaño del scroll en vertical */
+  /* Tamaño del scroll en horizontal */
+  background: #ed5565;
+  border-radius: 4px;
+  /* Ocultar scroll */
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #ed5565;
+  /* border-radius: 10px; */
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #d14c59;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+body::-webkit-scrollbar-thumb:active {
+  background-color: #c24551;
+}
+
+body::-webkit-scrollbar-track {
+  background: #fff;
+  /* border-radius: 4px; */
+}
+
+body::-webkit-scrollbar-track:hover,
+body::-webkit-scrollbar-track:active {
+}
+
+header {
+  z-index: 100000;
+}
+
+/* .banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(./assets/Fondo.jpg);
+  background-size: cover;
+} */

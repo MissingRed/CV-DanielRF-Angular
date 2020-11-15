@@ -1,0 +1,158 @@
+<div class="contenedor">
+  <div class="info">
+    <div class="text">
+      <h1>
+        Hola, Soy <span class="red">Daniel</span><span class="coma">;</span>
+        <br />
+        Desarrollador Web
+      </h1>
+      <p>CSS / JavaScript / Angular</p>
+      <div class="boton">
+        <a href="#contact">Contactame</a>
+      </div>
+    </div>
+    <div class="profile-image">
+      <img src="assets/lgo2.png" class="img-fluid" width="600" />
+    </div>
+  </div>
+  <div class="habilidades" id="habilidades">
+    <h1>Habilidades</h1>
+    <div class="container">
+      <section>
+        <h3>HTML</h3>
+        <div class="circle-wrap">
+          <div class="circle">
+            <div class="mask full">
+              <div class="fill0"></div>
+            </div>
+            <div class="mask half">
+              <div class="fill0"></div>
+            </div>
+            <div class="inside-circle">100%</div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h3>CSS</h3>
+        <div class="circle-wrap">
+          <div class="circle">
+            <div class="mask full">
+              <div class="fill0"></div>
+            </div>
+            <div class="mask half">
+              <div class="fill0"></div>
+            </div>
+            <div class="inside-circle">100%</div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h3>JAVASCRIPT</h3>
+        <div class="circle-wrap">
+          <div class="circle">
+            <div class="mask full">
+              <div class="fill1"></div>
+            </div>
+            <div class="mask half">
+              <div class="fill1"></div>
+            </div>
+            <div class="inside-circle">50%</div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h3>SQL</h3>
+        <div class="circle-wrap">
+          <div class="circle">
+            <div class="mask full">
+              <div class="fill2"></div>
+            </div>
+            <div class="mask half">
+              <div class="fill2"></div>
+            </div>
+            <div class="inside-circle">70%</div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h3>ANGULAR</h3>
+        <div class="circle-wrap">
+          <div class="circle">
+            <div class="mask full">
+              <div class="fill3"></div>
+            </div>
+            <div class="mask half">
+              <div class="fill3"></div>
+            </div>
+            <div class="inside-circle">40%</div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <div class="contacto" id="contact">
+    <div class="img">
+      <img src="assets/contact.png" alt="Contacto" />
+    </div>
+    <div class="formulario">
+      <h1>Contacto</h1>
+      <p>Por favor no dude en hablarme si tiene alguna pregunta.</p>
+      <!-- <p>Tu dirección IP es: {{ ipAddress }}</p> -->
+      <form [formGroup]="contactForm" (ngSubmit)="onSaveForm()">
+        <input
+          type="text"
+          placeholder="Nombre"
+          formControlName="nombre"
+          required
+          min="1"
+          max="6"
+        />
+        <br />
+        <input
+          type="email"
+          placeholder="Correo Electronico"
+          formControlName="email"
+          required
+        />
+        <br />
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="7"
+          placeholder="Mensaje"
+          formControlName="mensaje"
+          required
+        ></textarea>
+        <br />
+
+        <div class="botones">
+          <button type="submit" id="submit">Enviar</button>
+          <button id="cancel">Cancelar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- <div>
+    <h2>Formulario de contacto</h2>
+    <form (ngSubmit)="contactForm(form.value)" #form="ngForm">
+      <div>
+        <label>Nombre</label>
+        <input type="text" name="nombre" ngModel />
+      </div>
+      <div>
+        <label>Asunto</label>
+        <input type="text" name="asunto" ngModel />
+      </div>
+      <div>
+        <label>E-mail</label>
+        <input type="email" name="email" ngModel />
+      </div>
+      <div>
+        <label>Mensaje</label>
+        <textarea cols="30" rows="6" name="mensaje" ngModel></textarea>
+      </div>
+      <button type="submit">Enviar</button>
+    </form>
+  </div> -->
+</div>

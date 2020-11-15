@@ -1,0 +1,14 @@
+footer {
+  color: rgba(255, 255, 255, 0.596);
+  background: #1d1e1f;
+}
+
+footer p {
+  padding: 10px;
+}
+
+footer hr {
+  border: 0;
+  /* background: #707070; */
+  padding: 1px;
+}

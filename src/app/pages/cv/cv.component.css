@@ -1,0 +1,11 @@
+.contenedor {
+    text-align: center;
+}
+
+.contenedor .cv {
+    margin-top: 3rem;
+}
+
+.contenedor .cv img {
+    border-radius: 15px;
+}
